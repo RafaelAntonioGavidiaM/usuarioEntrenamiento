@@ -40,8 +40,8 @@
 
     <!--  sweetAlert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='vista/css/usuarios.css'>
+    <script src='vista/js/usuarios.js'></script>
 </head>
 
 <body>
