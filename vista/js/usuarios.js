@@ -26,6 +26,7 @@ $(document).ready(function (opcion, id, principal) {
 
                     $("#selectUsuario").html();
                     
+                    respuesta.forEach(listarRoles);
                     function listarRoles(item, index){
 
                         $("#selectRol").append('<option value="' + item.idRol  + '">' + item.descripcion + ' </option>')
