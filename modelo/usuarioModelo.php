@@ -7,7 +7,7 @@ class usuarioModelo{
     public static function mdlInsertar($n,$a,$e,$c,$id){
         $mensaje="";
 
-        $objInsertar=conexion::conectar()->prepare("Insert into usuario(nombre,apellido,email,contraseña,idRol) values (:n,:a,:e,:c,:id)")
+        $objInsertar=conexion::conectar()->prepare("Insert into usuario(nombre,apellido,email,contraseña,idRol) values (:n,:a,:e,:c,:id)");
         $objInsertar->bindParam(":n",$n,PDO::PARAM_STR);
         $objInsertar->bindParam(":a",$a,PDO::PARAM_STR);
         $objInsertar->bindParam(":e",$e,PDO::PARAM_STR);
