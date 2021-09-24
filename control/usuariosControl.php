@@ -17,7 +17,11 @@ class usuarioControl{
         echo json_encode($objRespuesta);
 
     }
-
+     public function cargarRoles()
+    {
+        $objRespuesta=usuarioModelo::cargarRoles();
+        echo json_encode($objRespuesta);
+    }
 
 }
 
@@ -32,6 +36,12 @@ $objUsuario->contraseña=$_POST["contraseña"];
 $objUsuario->idRol=$_POST["idRol"];
 $objUsuario->ctrlInsertar();
 
+
+
+}
+
+if(isset($_POST["cargarRoles"])){
+    $objUsuario->cargarRoles();
 
 
 }
