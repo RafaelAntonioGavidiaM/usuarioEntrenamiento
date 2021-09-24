@@ -46,7 +46,7 @@
         <div class="jumbotron">
             <h1 class="titulo text-center">Usuarios Practica</h1>
         </div>
-        <div class="col-sm-6">
+        <div class="col-lg-5">
             <form class="container">
                 <div class="form-group">
                     <input type="text" class="input" id="txtNombre" placeholder=" ">
@@ -64,15 +64,20 @@
                     <span class="line"></span>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="input" id="txtContraseña" placeholder=" ">
+                    <input type="text" class="input" id="txtContraseña" placeholder=" ">
                     <label for="txtContraseña" class="label">Contraseña:</label>
                     <span class="line"></span>
+                </div>
+                <div class="form-group">
+                    <select id="selectUsuario" class="form-select form-select-lg mb-3 input" aria-label=".form-select-lg example">
+                        <option selected place>Seleccionar Rol:</option>
+                    </select>
                 </div>
                 <button type="button" class="btn btn-primary" id="btnRegistrar">Registrar</button>
                 <button type="button" class="btn btn-primary" id="btnModificar">Modificar</button>
             </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-lg-7">
             <table id="tablaUsuario" style="width:100%" class="table row-border stripe display nowrap hover display compact order-column">
                 <thead class="cabeceraTabla">
 
