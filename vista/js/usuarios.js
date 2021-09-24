@@ -54,12 +54,12 @@ $(document).ready(function (opcion, id, principal) {
 
     $("#btnRegistrar").click(function () {
 
-
+        alert("hola")
         var nombre = $("#txtNombre").val();
         var apellido = $("#txtApellido").val()
         var email = $("#txtEmail").val();
         var contraseña = $("#txtContraseña").val();
-        var idRol = document.getElementById("selectUsuario").value;
+        var idRol = $("#selectUsuario").val();
 
         var objData = new FormData();
         objData.append("nombre", nombre);
@@ -67,6 +67,7 @@ $(document).ready(function (opcion, id, principal) {
         objData.append("email", email);
         objData.append("contraseña", contraseña);
         objData.append("idRol", idRol);
+        alert(idRol);
 
 
         $.ajax({
@@ -83,14 +84,15 @@ $(document).ready(function (opcion, id, principal) {
 
                 if (respuesta = "ok") {
 
-                    swal.fire({
+                    alert(respuesta)
+                    // swal.fire({
 
-                        position: 'top-end',
-                        icon: 'sucess',
-                        title: 'Registro Exitoso',
-                        showConfirmButton: false,
-                        timer: 1500,
-                    })
+                    //     position: 'top-end',
+                    //     icon: 'sucess',
+                    //     title: 'Registro Exitoso',
+                    //     showConfirmButton: false,
+                    //     timer: 1500,
+                    // })
                 }
             }
         })
