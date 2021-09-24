@@ -52,7 +52,7 @@ $(document).ready(function (opcion, id, principal) {
 
     // Registrar
 
-    $("#btnRegistrarUsuario").click(function () {
+    $("#btnRegistrar").click(function () {
 
 
         var nombre = $("#txtNombre").val();
