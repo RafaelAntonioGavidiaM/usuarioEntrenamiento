@@ -30,6 +30,15 @@ class usuarioModelo{
 
 
     }
+    public static function cargarRoles(){
+
+        $objInsertar=conexion::conectar()->prepare("select * from rol");
+        $objInsertar->execute();
+        $lista=$objInsertar->fetchAll();
+
+        $objInsertar=null;
+        return $lista;
+    }
 
 
 
