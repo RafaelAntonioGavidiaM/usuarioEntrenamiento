@@ -43,8 +43,8 @@
 
 <body>
     <div class="col-sm-12">
-        <div class="jumbotrom">
-            <h1 class="titulo">Usuarios Practica</h1>
+        <div class="jumbotron">
+            <h1 class="titulo text-center">Usuarios Practica</h1>
         </div>
         <div class="col-sm-6">
             <form class="container">
@@ -68,26 +68,26 @@
                     <label for="txtContraseña" class="label">Contraseña:</label>
                     <span class="line"></span>
                 </div>
-                <button type="button" class="btn btn-primary"id="btnRegistrar">Registrar</button>
-                <button type="button" class="btn btn-primary"id="btnModificar">Modificar</button>
+                <button type="button" class="btn btn-primary" id="btnRegistrar">Registrar</button>
+                <button type="button" class="btn btn-primary" id="btnModificar">Modificar</button>
             </form>
         </div>
         <div class="col-sm-6">
-        <table id="tablaUsuario" style="width:100%" class="table row-border stripe display nowrap hover display compact order-column">
-                            <thead class="cabeceraTabla">
+            <table id="tablaUsuario" style="width:100%" class="table row-border stripe display nowrap hover display compact order-column">
+                <thead class="cabeceraTabla">
 
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Email</th>
-                                    <th>Contraseña</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody id="bodyUsuario">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Contraseña</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyUsuario">
 
-                            </tbody>
-                        </table>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
