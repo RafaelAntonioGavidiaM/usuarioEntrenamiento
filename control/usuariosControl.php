@@ -13,7 +13,7 @@ class usuarioControl{
     public function ctrlInsertar(){
 
 
-        $objRespuesta=usuarioModelo::mdlInsertar($this->nombre,$this->apellido,$this->email,$this->contraseña,$this->id);
+        $objRespuesta=usuarioModelo::mdlInsertar($this->nombre,$this->apellido,$this->email,$this->contraseña,$this->idRol);
         echo json_encode($objRespuesta);
 
     }
@@ -41,10 +41,6 @@ $objUsuario->ctrlInsertar();
 }
 
 
-if($_POST["idRol"]){
-
-    $hola=0;
-}
 
 if(isset($_POST["cargarRoles"])){
     $objUsuario->cargarRoles();
