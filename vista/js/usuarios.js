@@ -24,12 +24,12 @@ $(document).ready(function (opcion, id, principal) {
 
                 if(opcion = 1){
 
-                    $("#selectUsuario").html();
+                    $("#selectUsuario").html("");
                     
                     respuesta.forEach(listarRoles);
                     function listarRoles(item, index){
 
-                        $("#selectRol").append('<option value="' + item.idRol  + '">' + item.descripcion + ' </option>')
+                        $("#selectUsuario").append('<option value="' + item.idRol  + '">' + item.descripcion + ' </option>')
 
                     }
                 }else if(opcion = 2){
